@@ -7,6 +7,35 @@ body
     padding:0px; 
     margin:0px; 
 }
+video 
+{
+    width: 400px;
+    padding: 15px;
+    margin: 15px;
+    background-color:black;
+    border:2px white solid;
+    box-shadow: 10px 10px 5px black;
+}
+button 
+{
+    background-color:black;
+    color:white;
+    height:40px;
+    border:2px white solid;
+    box-shadow: 10px 10px 5px black;
+    border-radius: 5px;
+}
+button:hover
+{
+    background-color:beige;
+    color:black;
+    height:40px;
+    border:2px white solid;
+    box-shadow: -10px -10px 5px black;
+    border-radius: 5px;
+}
+
+
 #wrapper 
 { 
     width: 960px;

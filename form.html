@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Form</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="wrapper">
+<h1>Feedback . . . Stay in Touch</h1>
+<form action=mailto:ahmed.sheikh@ontariotechu.net ?subject=Signup Form method="post" enctype="text/plain" name="form">
+    <p>
+    <label for="name">Name</label>
+    <input type="text" name="name" placeholder="Enter your Name" size="32" required>
+    </p>   
+    <p>
+        <label for="email">Email</label>
+        <input name="email" type="email" size="40" required>
+    </p> 
+    <p>
+        <label for="comments">Comments?</label><br>
+        <textarea name="comments" cols="60" rows="6"></textarea>
+     </p>
+    <p>
+   <input type="checkbox" name="maillist">
+   <label for="maillist">Put me on your e-list!</label>
+    </p>
+    <p>
+        <label for="where">How did you find us?</label>
+        <select name="where">
+        <option value="Search engine">Search engine</option>
+        <option value="Word of mouth">Word of mouth</option>
+        <option value="Craigslist">Craigslist</option>
+        <option value="Other">Other</option>
+        </select>
+    </p>
+    <input list="list">
+    <p><label for="countries">Where do you live?</label>
+        <input list="countries">
+        <datalist id="countries">
+            <option value="Afghanistan">
+            <option value="Albania">
+            <option value="Algeria">
+            <option value="Andorra">
+            <option value="Angola">
+            <option value="Antigua and Barbuda">
+            <option value="Argentina">
+            <option value="Armenia">
+            <option value="Aruba">
+            <option value="Australia">
+            <option value="Austria">
+            <option value="Azerbaijan">
+        </datalist>
+        
+
+    <p><input type="submit" value="Click here to submit the form"/></p>
+    <p><input type="reset" value="Click here to reset the form"/></p>
+
+
+     
+     
+            
+</form>
+    
+</div>
+</body>
+</html>
