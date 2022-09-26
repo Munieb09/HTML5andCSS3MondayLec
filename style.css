@@ -34,7 +34,42 @@ button:hover
     box-shadow: -10px -10px 5px black;
     border-radius: 5px;
 }
+header, footer {
+    background-color: white;
+    color: red;
+    padding-top:5px;
+    padding-bottom:5px;
+    }
+    aside {
+        background-color: beige;
+        float: right;
+        width: 300px;
+        margin: 5px;
+        padding: 5px;
+        }
+        mark 
+        {
+         background-color:aqua;
+        }
+figure 
+{
+    position:relative;
+    width:220px;
+    height:200px;
+    background-color:white;
+    margin:5px;
+    padding:5px;
+    border:1px solid black;
+}
+figcaption 
+{
+    position:bottom;
+    background-color:black;
+    color:white;
+}
 
+
+        
 
 #wrapper 
 { 
