@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Slideshow 01</title>
+<style>
+body{width:80%; margin:auto; font-family:sans-serif;}
+figure {width:320px;}
+img{width:100%;}
+.slideshow, .frame 
+{
+    position: relative; 
+    height: 412px; 
+    width:412px; 
+    margin:auto;
+}
+.slide {
+    width: 100%; 
+    overflow: hidden; 
+    position: absolute; 
+    height: 100%; 
+    left: 0; 
+    top: 0; 
+    opacity: 0; 
+    transition: opacity 5s;}
+.show:checked + .slide {opacity: 1;}
+.button {display: inline-block;}
+input{display:none;}
+.button-label {font-size: 1rem; padding:1rem; background: black; display:block; height:1rem; width:1rem; text-align:center; border-radius: .5rem; color: white; cursor: pointer; transition: background 2s, color 2s;}
+.button-label:hover{background:red;}
+@media only screen and (max-width: 480px) {body {width:100%;}}
+</style>
+</head>
+<body>
+<div class="frame">
+<h1>Roses</h1>
+<div class="slideshow">
+<input type="radio" name="button" class="show" id="one" checked="checked" />
+<div class="slide"><a target="_blank" title="FlowerImage1" href="Image1.jpg">
+<img width="512" alt="White Flower" src="Image1.jpg"></a>
+</div>
+<input type="radio" name="button" class="show" id="two" />
+<div class="slide">
+<a target="_blank" title="FlowerImage2" href="Image2.jpg"><img width="512" alt="Yellow Flower" src="Image2.jpg"></a>
+</div>
+<input type="radio" name="button" class="show" id="three" />
+<div class="slide">
+<a target="_blank" title="FlowerImage3"><img alt="English Flower" src="Image3.jpg"></a>
+</div>
+</div>
+<ul>
+<li class="button"><label class="button-label" for="one">1</label></li><li class="button"><label class="button-label" for="two">2</label></li><li class="button"><label class="button-label" for="three">3</label></li></ul></div>
+</body>
+</html>
